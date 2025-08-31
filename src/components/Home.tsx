@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'wouter';
-import '../styles/home.css';
+import '../styles/Home.css';
 import UtilityBar from "./navigation/UtilityBar";
 
 
