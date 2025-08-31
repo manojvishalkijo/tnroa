@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Membership.css';
 import { Link } from "react-router-dom";
 import UtilityBar from "./navigation/UtilityBar";
+  import logo from "./assets/logo.jpg";
 
 export default function Membership() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -131,71 +132,79 @@ export default function Membership() {
   return (
     <div className="membership-container">
       {/* Header */}
-        <header className="w-full fixed top-0 z-50">
-         <UtilityBar />
-       
-         {/* Main navbar */}
-         <div className="backdrop-blur-md bg-white/10 border-b border-white/20 text-white py-4 px-6">
-           <div className="w-full flex items-center justify-between">
-             {/* Logo + tagline */}
-             <div className="flex items-center space-x-4">
-               <span className="text-2xl md:text-3xl font-bold">TSROA.GOV</span>
-               <div className="hidden md:block border-l border-white/30 pl-4 ml-4">
-                 <span className="text-xs md:text-sm italic">
-                   Official website of Government of TamilNadu
-                 </span>
-               </div>
-             </div>
-       
-             {/* Desktop nav */}
-             <nav className="hidden md:flex items-center space-x-6">
-               <Link to="/" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 முகப்பு
-               </Link>
-               <Link to="/Intro" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 அறிமுகம்
-               </Link>
-               <Link to="/Activities" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 செயல்பாடுகள்
-               </Link>
-               <Link to="/Actions" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 நடவடிக்கைகள்
-               </Link>
-               <Link to="/Membership" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 உறுப்பினர் சேர்க்கை
-               </Link>
-               
-               <Link to="/GovermentOrder" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
-                 அரசாணைகள்
-               </Link>
-             </nav>
-       
-             {/* Mobile Hamburger */}
-             {/* Mobile Hamburger */}
-       <div className="md:hidden">
-         <button
-           className="text-white text-2xl focus:outline-none"
-           onClick={() => setIsMenuOpen(!isMenuOpen)}
-         >
-           {isMenuOpen ? "✖" : "☰"}
-         </button>
-       </div>
-       
-           </div>
-       
-           {/* Mobile Menu */}
-           {isMenuOpen && (
-             <div className="flex flex-col mt-2 space-y-2 md:hidden">
-               <Link to="/" className="px-3 py-2 hover:bg-white/10 rounded">முகப்பு</Link>
-               <Link to="/Intro" className="px-3 py-2 hover:bg-white/10 rounded">அறிமுகம்</Link>
-               <Link to="/Activities" className="px-3 py-2 hover:bg-white/10 rounded">செயல்பாடுகள்</Link>
-               <Link to="/Actions" className="px-3 py-2 hover:bg-white/10 rounded">நடவடிக்கைகள்</Link>
-               <Link to="/Membership" className="px-3 py-2 hover:bg-white/10 rounded">உறுப்பினர் சேர்க்கை</Link>
-               <Link to="/GovermentOrder" className="px-3 py-2 hover:bg-white/10 rounded">அரசாணைகள்</Link>
-             </div>
-           )}
-         </div>
-       </header>
+         <header className="w-full fixed top-0 z-50">
+          <UtilityBar />
+        
+          {/* Main navbar */}
+          <div className="backdrop-blur-md bg-white/10 border-b border-white/20 text-white py-4 px-6">
+            <div className="w-full flex items-center justify-between">
+              {/* Logo + tagline */}
+              <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white bg-white">
+
+  <img
+      src={logo}
+      alt="TSROA Logo"
+      className="w-full h-full object-contain"
+    />
+                </div>
+                <div className="hidden md:block border-l border-white/30 pl-4 ml-4">
+                  <span className="text-xs md:text-sm italic">
+                  TSROA.GOV                  
+                  </span>
+                  </div>
+              </div>
+        
+              {/* Desktop nav */}
+              <nav className="hidden md:flex items-center space-x-6">
+                <Link to="/" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  முகப்பு
+                </Link>
+                <Link to="/Intro" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  அறிமுகம்
+                </Link>
+                <Link to="/Activities" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  செயல்பாடுகள்
+                </Link>
+                <Link to="/Actions" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  நடவடிக்கைகள்
+                </Link>
+                <Link to="/Membership" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  உறுப்பினர் சேர்க்கை
+                </Link>
+                
+                <Link to="/GovermentOrder" className="hover:bg-white/10 px-3 py-2 rounded transition-all duration-300">
+                  அரசாணைகள்
+                </Link>
+              </nav>
+        
+              {/* Mobile Hamburger */}
+              {/* Mobile Hamburger */}
+        <div className="md:hidden">
+          <button
+            className="text-white text-2xl focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? "✖" : "☰"}
+          </button>
+        </div>
+        
+            </div>
+        
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+              <div className="flex flex-col mt-2 space-y-2 md:hidden">
+                <Link to="/" className="px-3 py-2 hover:bg-white/10 rounded">முகப்பு</Link>
+                <Link to="/Intro" className="px-3 py-2 hover:bg-white/10 rounded">அறிமுகம்</Link>
+                <Link to="/Activities" className="px-3 py-2 hover:bg-white/10 rounded">செயல்பாடுகள்</Link>
+                <Link to="/Actions" className="px-3 py-2 hover:bg-white/10 rounded">நடவடிக்கைகள்</Link>
+                <Link to="/Membership" className="px-3 py-2 hover:bg-white/10 rounded">உறுப்பினர் சேர்க்கை</Link>
+          
+                <Link to="/GovermentOrder" className="px-3 py-2 hover:bg-white/10 rounded">அரசாணைகள்</Link>
+              </div>
+            )}
+          </div>
+        </header>
 
       {/* Hero Section */}
       <section id="overview" className="membership-hero">

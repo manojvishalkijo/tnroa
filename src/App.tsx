@@ -6,18 +6,27 @@ import Activities from "./components/Activities";
 import Actions from "./components/Actions";
 import Membership from "./components/Membership";
 import GovermentOrder from "./components/GovermentOrder";
+import Footer from "./components/Footer"; // ✅ Import Footer
 
 export default function App() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/Intro" component={Intro} />
-      <Route path="/Activities" component={Activities} />
-      <Route path="/Actions" component={Actions} />
-      <Route path="/Membership" component={Membership} />
-      <Route path="/GovermentOrder" component={GovermentOrder} />
-      {/* Fallback */}
-      <Route>404 – Page not found</Route>
-    </Switch>
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      {/* Main Content */}
+      <div style={{ flex: 1 }}>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/Intro" component={Intro} />
+          <Route path="/Activities" component={Activities} />
+          <Route path="/Actions" component={Actions} />
+          <Route path="/Membership" component={Membership} />
+          <Route path="/GovermentOrder" component={GovermentOrder} />
+          {/* Fallback */}
+          <Route>404 – Page not found</Route>
+        </Switch>
+      </div>
+
+      {/* Common Footer */}
+      <Footer />
+    </div>
   );
 }

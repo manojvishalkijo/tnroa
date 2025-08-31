@@ -1,0 +1,70 @@
+
+/* Footer main container */
+.home-footer {
+  background-color: #45b851; /* ✅ Green background */
+  color: #fff; /* White text for contrast */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer inner content */
+.home-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid layout for footer sections */
+.home-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Each section */
+.home-footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titles in each section */
+.home-footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Subtitle for first section */
+.home-footer-subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Footer lists */
+.home-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-footer-list li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.home-footer-list li:hover {
+  color: #e6ffe6; /* Light green on hover */
+}
+
+/* Bottom section */
+.home-footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.9;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+}

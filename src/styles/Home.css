@@ -21,6 +21,7 @@
   background-color: #f8f9fa;
   font-family: var(--home-font-tamil);
   line-height: 1.6;
+  
 }
 
 /* Header Styles */
@@ -30,6 +31,8 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
 
 .home-header-content {
