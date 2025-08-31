@@ -1,0 +1,714 @@
+/* Tamil Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Root Variables */
+.gov-orders-container {
+  --gov-orders-primary: rgb(0, 128, 0);
+  --gov-orders-secondary: rgb(0, 128, 0);
+  --gov-orders-tertiary: rgb(0, 128, 0);
+  --gov-orders-accent: #f4f1f9;
+  --gov-orders-text: #2c3e50;
+  --gov-orders-text-light: #7f8c8d;
+  --gov-orders-white: #ffffff;
+  --gov-orders-border: #bdc3c7;
+  --gov-orders-shadow: rgba(0, 0, 0, 0.1);
+  --gov-orders-success: #27ae60;
+  --gov-orders-warning: #f39c12;
+  --gov-orders-info: #3498db;
+  --gov-orders-font-tamil: 'Noto Sans Tamil', sans-serif;
+  --gov-orders-font-sans: 'Inter', sans-serif;
+}
+
+/* Container */
+.gov-orders-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: var(--gov-orders-font-tamil);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.gov-orders-header {
+  background-color: var(--gov-orders-white);
+  box-shadow: 0 4px 6px var(--gov-orders-shadow);
+  border-bottom: 4px solid var(--gov-orders-primary);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.gov-orders-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.gov-orders-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.gov-orders-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gov-orders-logo {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--gov-orders-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gov-orders-logo-icon {
+  font-size: 2rem;
+  color: var(--gov-orders-white);
+}
+
+.gov-orders-main-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gov-orders-primary);
+  margin: 0;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-subtitle {
+  font-size: 0.875rem;
+  color: var(--gov-orders-text-light);
+  margin: 0;
+  font-family: var(--gov-orders-font-sans);
+}
+
+/* Desktop Navigation */
+.gov-orders-desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.gov-orders-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gov-orders-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-nav-link:hover {
+  color: var(--gov-orders-primary);
+  background-color: var(--gov-orders-accent);
+}
+
+.gov-orders-nav-icon {
+  font-size: 1.125rem;
+}
+
+/* Mobile Menu */
+.gov-orders-mobile-menu-btn {
+  display: none;
+}
+
+.gov-orders-menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--gov-orders-text);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.gov-orders-mobile-nav {
+  border-top: 1px solid var(--gov-orders-border);
+  background-color: var(--gov-orders-white);
+}
+
+.gov-orders-mobile-nav-content {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gov-orders-mobile-nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: var(--gov-orders-text);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-mobile-nav-link:hover {
+  background-color: var(--gov-orders-accent);
+  color: var(--gov-orders-primary);
+}
+
+/* Hero Section */
+.gov-orders-hero {
+  background: linear-gradient(135deg, var(--gov-orders-primary), var(--gov-orders-secondary));
+  color: var(--gov-orders-white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.gov-orders-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.gov-orders-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-hero-description {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+/* Main Content */
+.gov-orders-main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.gov-orders-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+.gov-orders-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card Styles */
+.gov-orders-card {
+  background-color: var(--gov-orders-white);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px var(--gov-orders-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gov-orders-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px var(--gov-orders-shadow);
+}
+
+.gov-orders-card-header {
+  background-color: var(--gov-orders-primary);
+  padding: 1.5rem;
+}
+
+.gov-orders-card-header-secondary {
+  background-color: var(--gov-orders-secondary);
+}
+
+.gov-orders-card-header-tertiary {
+  background-color: var(--gov-orders-tertiary);
+}
+
+.gov-orders-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gov-orders-white);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-card-content {
+  padding: 2rem;
+}
+
+/* Table Styles */
+.gov-orders-table-container {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gov-orders-border);
+}
+
+.gov-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--gov-orders-font-tamil);
+  font-size: 0.9rem;
+}
+
+.gov-orders-th {
+  background-color: var(--gov-orders-primary);
+  color: var(--gov-orders-white);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gov-orders-secondary);
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-td {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #ecf0f1;
+  border-right: 1px solid #ecf0f1;
+  font-family: var(--gov-orders-font-tamil);
+  vertical-align: top;
+}
+
+.gov-orders-td:last-child {
+  border-right: none;
+}
+
+.gov-orders-td-center {
+  text-align: center;
+}
+
+.gov-orders-td-left {
+  text-align: left;
+}
+
+.gov-orders-row:hover {
+  background-color: var(--gov-orders-accent);
+}
+
+.gov-orders-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.gov-orders-row:nth-child(even):hover {
+  background-color: var(--gov-orders-accent);
+}
+
+.gov-orders-name {
+  font-weight: 600;
+  color: var(--gov-orders-primary);
+  margin-bottom: 0.25rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-description {
+  color: var(--gov-orders-text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-download-btn {
+  background-color: var(--gov-orders-primary);
+  color: var(--gov-orders-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--gov-orders-font-tamil);
+  font-size: 0.875rem;
+}
+
+.gov-orders-download-btn:hover {
+  background-color: var(--gov-orders-secondary);
+  transform: translateY(-2px);
+}
+
+.gov-orders-btn-icon {
+  font-size: 1rem;
+}
+
+/* Categories Grid */
+.gov-orders-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.gov-orders-category-card {
+  background: linear-gradient(135deg, var(--gov-orders-accent), #f8f5ff);
+  border: 2px solid var(--gov-orders-primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.gov-orders-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--gov-orders-shadow);
+  border-color: var(--gov-orders-secondary);
+}
+
+.gov-orders-category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.gov-orders-category-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gov-orders-primary);
+  margin-bottom: 0.75rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-category-desc {
+  color: var(--gov-orders-text-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-category-count {
+  background-color: var(--gov-orders-primary);
+  color: var(--gov-orders-white);
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+/* Notice Box */
+.gov-orders-notice-box {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--gov-orders-warning);
+}
+
+.gov-orders-notice-icon {
+  font-size: 3rem;
+  color: var(--gov-orders-warning);
+  flex-shrink: 0;
+}
+
+.gov-orders-notice-content {
+  flex: 1;
+}
+
+.gov-orders-notice-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gov-orders-warning);
+  margin-bottom: 1rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-notice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gov-orders-notice-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--gov-orders-text);
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-notice-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gov-orders-warning);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Sidebar */
+.gov-orders-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gov-orders-sidebar-card {
+  background-color: var(--gov-orders-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px var(--gov-orders-shadow);
+  padding: 1.5rem;
+}
+
+.gov-orders-sidebar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--gov-orders-primary);
+  margin-bottom: 1rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.gov-orders-info-item:last-child {
+  border-bottom: none;
+}
+
+.gov-orders-info-label {
+  font-weight: 500;
+  color: var(--gov-orders-text-light);
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-info-value {
+  font-weight: 600;
+  color: var(--gov-orders-text);
+  font-family: var(--gov-orders-font-tamil);
+}
+
+/* Category Stats */
+.gov-orders-category-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gov-orders-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--gov-orders-primary);
+}
+
+.gov-orders-stat-icon {
+  font-size: 1.5rem;
+  color: var(--gov-orders-primary);
+  flex-shrink: 0;
+}
+
+.gov-orders-stat-content {
+  flex: 1;
+}
+
+.gov-orders-stat-label {
+  font-size: 0.875rem;
+  color: var(--gov-orders-text-light);
+  margin-bottom: 0.25rem;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-stat-count {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gov-orders-primary);
+  font-family: var(--gov-orders-font-tamil);
+}
+
+/* Links */
+.gov-orders-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gov-orders-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  color: var(--gov-orders-text);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  font-family: var(--gov-orders-font-tamil);
+}
+
+.gov-orders-link:hover {
+  background-color: var(--gov-orders-accent);
+  color: var(--gov-orders-primary);
+}
+
+.gov-orders-link-icon {
+  font-size: 1.125rem;
+  color: var(--gov-orders-primary);
+}
+
+/* Sidebar List */
+.gov-orders-sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gov-orders-sidebar-list li {
+  padding: 0.5rem 0;
+  color: var(--gov-orders-text-light);
+  border-bottom: 1px solid #f0f0f0;
+  font-family: var(--gov-orders-font-tamil);
+  font-size: 0.875rem;
+}
+
+.gov-orders-sidebar-list li:last-child {
+  border-bottom: none;
+}
+
+.gov-orders-sidebar-list li:before {
+  content: "▶";
+  color: var(--gov-orders-primary);
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gov-orders-desktop-nav {
+    display: none;
+  }
+
+  .gov-orders-mobile-menu-btn {
+    display: block;
+  }
+
+  .gov-orders-hero-title {
+    font-size: 2rem;
+  }
+
+  .gov-orders-hero-description {
+    font-size: 1rem;
+  }
+
+  .gov-orders-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gov-orders-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gov-orders-main-content {
+    padding: 2rem 1rem;
+  }
+
+  .gov-orders-card-content {
+    padding: 1.5rem;
+  }
+
+  .gov-orders-th,
+  .gov-orders-td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.8rem;
+  }
+
+  .gov-orders-notice-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .gov-orders-hero {
+    padding: 3rem 0;
+  }
+
+  .gov-orders-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .gov-orders-card-content {
+    padding: 1rem;
+  }
+
+  .gov-orders-th,
+  .gov-orders-td {
+    padding: 0.5rem 0.125rem;
+    font-size: 0.75rem;
+  }
+
+  .gov-orders-download-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+.gov-orders-hero {
+  background: linear-gradient(135deg, rgb(0, 128, 0));
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.gov-orders-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+}
+
+.gov-orders-hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gov-orders-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Print Styles */
+@media print {
+  .gov-orders-header,
+  .gov-orders-hero {
+    background: none !important;
+    color: black !important;
+  }
+
+  .gov-orders-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+
+  .gov-orders-table {
+    border: 1px solid #000;
+  }
+
+  .gov-orders-th,
+  .gov-orders-td {
+    border: 1px solid #000;
+  }
+  
+}

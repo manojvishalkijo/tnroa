@@ -1,0 +1,706 @@
+/* Tamil Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Root Variables */
+.activities-container {
+  --activities-primary: rgb(0, 128, 0);
+  --activities-secondary: rgb(0, 128, 0);
+  --activities-accent: #e8f2ff;
+  --activities-text: #2c3e50;
+  --activities-text-light: #7f8c8d;
+  --activities-white: #ffffff;
+  --activities-border: #e0e0e0;
+  --activities-shadow: rgba(0, 0, 0, 0.1);
+  --activities-success: #27ae60;
+  --activities-warning: #f39c12;
+  --activities-info: #3498db;
+  --activities-font-tamil: 'Noto Sans Tamil', sans-serif;
+  --activities-font-sans: 'Inter', sans-serif;
+}
+
+/* Container */
+.activities-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: var(--activities-font-tamil);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.activities-header {
+  background-color: var(--activities-white);
+  box-shadow: 0 4px 6px var(--activities-shadow);
+  border-bottom: 4px solid var(--activities-primary);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.activities-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.activities-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.activities-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.activities-logo {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--activities-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activities-logo-icon {
+  font-size: 2rem;
+  color: var(--activities-white);
+}
+
+.activities-main-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--activities-primary);
+  margin: 0;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-subtitle {
+  font-size: 0.875rem;
+  color: var(--activities-text-light);
+  margin: 0;
+  font-family: var(--activities-font-sans);
+}
+
+/* Desktop Navigation */
+.activities-desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.activities-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--activities-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-nav-link:hover {
+  color: var(--activities-primary);
+  background-color: var(--activities-accent);
+}
+
+.activities-nav-icon {
+  font-size: 1.125rem;
+}
+
+/* Mobile Menu */
+.activities-mobile-menu-btn {
+  display: none;
+}
+
+.activities-menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--activities-text);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.activities-mobile-nav {
+  border-top: 1px solid var(--activities-border);
+  background-color: var(--activities-white);
+}
+
+.activities-mobile-nav-content {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.activities-mobile-nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: var(--activities-text);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-mobile-nav-link:hover {
+  background-color: var(--activities-accent);
+  color: var(--activities-primary);
+}
+
+/* Hero Section */
+.activities-hero {
+  background: linear-gradient(135deg, var(--activities-primary), var(--activities-secondary));
+  color: var(--activities-white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.activities-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.activities-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-hero-description {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-hero-date {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+.activities-date-label {
+  font-weight: 500;
+  margin-right: 1rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-date-value {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #ffd700;
+}
+
+/* Main Content */
+.activities-main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.activities-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+.activities-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card Styles */
+.activities-card {
+  background-color: var(--activities-white);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px var(--activities-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activities-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px var(--activities-shadow);
+}
+
+.activities-card-header {
+  background-color: var(--activities-primary);
+  padding: 1.5rem;
+}
+
+.activities-card-header-secondary {
+  background-color: var(--activities-secondary);
+}
+
+.activities-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--activities-white);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-card-content {
+  padding: 2rem;
+}
+
+.activities-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--activities-text);
+  margin-bottom: 1.5rem;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Greeting Section */
+.activities-greeting {
+  background-color: var(--activities-accent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.activities-greeting-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--activities-primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-greeting-text {
+  font-size: 1.125rem;
+  color: var(--activities-text);
+  font-weight: 500;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Highlight Box */
+.activities-highlight-box {
+  background-color: #fff8e1;
+  border-left: 4px solid var(--activities-warning);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.activities-highlight-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--activities-warning);
+  margin-bottom: 0.75rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-highlight-text {
+  color: var(--activities-text);
+  line-height: 1.6;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Objectives Grid */
+.activities-objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.activities-objective-card {
+  background-color: #f8f9fa;
+  border: 2px solid var(--activities-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.activities-objective-card:hover {
+  border-color: var(--activities-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--activities-shadow);
+}
+
+.activities-objective-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.activities-objective-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--activities-primary);
+  margin-bottom: 0.75rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-objective-text {
+  color: var(--activities-text-light);
+  line-height: 1.5;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Legal Updates */
+.activities-legal-updates {
+  display: grid;
+  gap: 1rem;
+}
+
+.activities-legal-item {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--activities-info);
+  padding: 1rem 1.5rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.activities-legal-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--activities-info);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-legal-desc {
+  color: var(--activities-text-light);
+  font-size: 0.875rem;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Guidelines */
+.activities-guidelines-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activities-guideline-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.activities-guideline-number {
+  background-color: var(--activities-primary);
+  color: var(--activities-white);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.activities-guideline-content {
+  flex: 1;
+}
+
+.activities-guideline-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--activities-text);
+  margin-bottom: 0.5rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-guideline-text {
+  color: var(--activities-text-light);
+  line-height: 1.6;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Mission Section */
+.activities-mission-box {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--activities-success);
+  margin-bottom: 2rem;
+}
+
+.activities-mission-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.activities-mission-content {
+  flex: 1;
+}
+
+.activities-mission-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--activities-success);
+  margin-bottom: 0.75rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-mission-text {
+  color: var(--activities-text);
+  line-height: 1.7;
+  font-family: var(--activities-font-tamil);
+}
+
+/* Commitment Section */
+.activities-commitment {
+  background-color: var(--activities-accent);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.activities-commitment-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--activities-primary);
+  margin-bottom: 1rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-commitment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activities-commitment-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--activities-text);
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-commitment-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--activities-success);
+  font-weight: bold;
+}
+
+/* Sidebar */
+.activities-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activities-sidebar-card {
+  background-color: var(--activities-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px var(--activities-shadow);
+  padding: 1.5rem;
+}
+
+.activities-sidebar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--activities-primary);
+  margin-bottom: 1rem;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.activities-info-item:last-child {
+  border-bottom: none;
+}
+
+.activities-info-label {
+  font-weight: 500;
+  color: var(--activities-text-light);
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-info-value {
+  font-weight: 600;
+  color: var(--activities-text);
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activities-sidebar-list li {
+  padding: 0.5rem 0;
+  color: var(--activities-text-light);
+  border-bottom: 1px solid #f0f0f0;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-sidebar-list li:last-child {
+  border-bottom: none;
+}
+
+.activities-sidebar-list li:before {
+  content: "▶";
+  color: var(--activities-primary);
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Contact Info */
+.activities-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activities-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.375rem;
+  margin: 0;
+  font-family: var(--activities-font-tamil);
+}
+
+.activities-contact-icon {
+  font-size: 1.125rem;
+  color: var(--activities-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .activities-desktop-nav {
+    display: none;
+  }
+
+  .activities-mobile-menu-btn {
+    display: block;
+  }
+
+  .activities-hero-title {
+    font-size: 2rem;
+  }
+
+  .activities-hero-description {
+    font-size: 1rem;
+  }
+
+  .activities-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-objectives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activities-main-content {
+    padding: 2rem 1rem;
+  }
+
+  .activities-card-content {
+    padding: 1.5rem;
+  }
+
+  .activities-mission-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .activities-hero {
+    padding: 3rem 0;
+  }
+
+  .activities-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .activities-card-content {
+    padding: 1rem;
+  }
+
+  .activities-guideline-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .activities-mission-box {
+    padding: 1.5rem;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+/* Move this above @media print */
+.activities-hero {
+  background: linear-gradient(135deg, rgb(0, 128, 0));
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.activities-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+}
+
+.activities-hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.activities-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* Print Styles */
+@media print {
+  .activities-header,
+  .activities-hero {
+    background: none !important;
+    color: black !important;
+  }
+
+  .activities-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+  
+  
+}
