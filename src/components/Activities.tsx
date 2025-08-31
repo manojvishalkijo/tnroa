@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/activities.css';
+import '../styles/Activities.css';
 import UtilityBar from "./navigation/UtilityBar";
 import { Link } from "react-router-dom";
 
